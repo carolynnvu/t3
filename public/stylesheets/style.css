@@ -1,0 +1,320 @@
+body {
+	font: 14px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  background-color: #32313B;
+  color: #ffffff;
+}
+
+a, a:hover, a:focus, a:active {
+  color: #39B1C6;
+  text-decoration: none;
+}
+
+
+.nav-tabs > li, .nav-pills > li {
+    float: none;
+    display: inline-block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #5B5499;
+}
+
+.nav-tabs > li > a, 
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus {
+    background-color: #6C6A7F;
+    color: #ffffff;
+    border: none;
+    margin-right: 0px;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+    background-color: #5B5499;
+    color: #fff;
+    border: none;
+}
+ 
+.nav-tabs, .nav-pills {
+    text-align: center;
+}
+
+/* Homepage */
+#homepageContainer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#homepageContainer h2 {
+  margin-bottom: 40px;
+}
+
+#homepageContainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+/* Geolocation page */
+#world-map {
+  display: block;
+  margin: 0 auto;
+}
+
+/* About Page */
+.collage div {
+  display: inline-block;
+}
+
+/* FORMS */
+input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 1em;
+}
+
+.form-collection {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+.form-collection input {
+	background-color: #25242c;
+	border: medium none;
+	color: #ffffff;
+	padding: 2px 8px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.form-collection .form-collection-heading,
+.form-collection {
+  margin-bottom: 10px;
+}
+
+.form-collection div {
+	margin-bottom: 10px;
+}
+
+.form-collection-heading {
+	text-align: center;
+}
+
+.form-collection .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-collection .form-control:focus {
+  z-index: 2;
+}
+
+.form-collection input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-submit-btn {
+	color: #FF8E86;
+	background-color: #F4313B;
+}
+
+.form-submit-btn:hover {
+	color: #FF8086;
+	background-color: #BF262E;
+}
+
+.challenge-form-btn {
+	background-color: #39B1C6;
+	color: #A9D2EB;
+}
+
+.challenge-form-btn:hover, 
+.challenge-form-btn:active,
+.challenge-form-btn:focus {
+	background-color: #2E90A1;
+	color: #A9D2EB;
+}
+
+.find-user-btn {
+  height: 39px;
+}
+
+#foundUser {
+  text-align: center;
+}
+/* END Of FORMS */
+
+/* CHOOSE Warrior Section */
+.warrior-div {
+  margin-bottom: 40px;
+}
+
+.warrior-div img{
+  background-color: #25242C;
+  border-radius: 10px;
+}
+
+.warrior-div div {
+  text-align: center;
+}
+
+.warrior-submit-btn {
+  background-color: #F09C2F;
+  color: #F0C462;
+}
+
+.warrior-submit-btn:hover, 
+.warrior-submit-btn:active,
+.warrior-submit-btn:focus {
+  background-color: #F09A14;
+  color: #F0C462;
+}
+
+#warriorBtnHolder {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* End CHOOSE section */
+
+/* TABLES */
+thead {
+  background-color: #25242C;
+  border-bottom: none; 
+}
+
+.table thead > tr > th { 
+  border-bottom: none; 
+  color: #D6D1FF;
+}
+
+.table > tbody > tr > td {
+    border-top: none;
+}
+/* END OF TABLES */
+
+/* Arena Table*/
+.matchStatus.open {
+  color: #32893B;
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+}
+
+.matchStatus.closed {
+  color: #DE313B;
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+}
+/* End of Arena table */
+
+#displayCharacter {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#displayCharacter img {
+  display:block;
+  margin:auto;
+}
+
+/* Game Page */
+#gameRoomPlayer1 {
+  color: #FF2135;
+}
+
+#gameRoomPlayer2 {
+  color: #3DE2FF;
+}
+
+#waitingMessage {
+  text-align: center;
+  color: #D6D1FF;
+}
+
+#waitingRoomTitle {
+  text-align: center;
+  border-bottom: solid #25242C;
+  margin-bottom: 50px;
+}
+
+#winner {
+  text-align: center;
+  font-size: large;
+}
+
+#board {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+ 
+.blocks {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid;
+    float: left;
+}
+ 
+#piece0 {
+	width: 75%;
+  height:0;
+  padding-bottom: 75%;
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  border-radius: 50%;
+  background: #FF2135;
+	outline-style: none;
+	margin-left: 12%;
+	margin-top: 12%;
+}
+ 
+#piece1 {
+    width: 75%;
+    height:0;
+    padding-bottom: 75%;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    background: #3DE2FF;
+    outline-style: none;
+    margin-left: 12%;
+    margin-top: 12%;
+}
+ 
+#displayPlayerInfo {
+    margin: 0 auto;
+    width: 100%;
+    color: #1FD26A;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+#displayPlayerInfo > div {
+    display: inline-block;
+}
+ 
+#displayPlayerInfo > #player1 {
+    float: left;
+}
+ 
+#displayPlayerInfo > #player2 {
+    float: right;
+}

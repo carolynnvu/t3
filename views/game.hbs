@@ -1,0 +1,31 @@
+<h2 id="waitingRoomTitle">Warrior's Den</h2>
+<div id='displayPlayerInfo'>
+	<div id="player1">
+		<div style="display:block"> Player 1 </div>
+		<div><span id="gameRoomPlayer1"><i class="fa fa-shield fa-4x"></i></span></div>
+	</div>
+	<div id="player2">
+	   <div style="display:block"> Player 2 </div>
+	   <div><span id="gameRoomPlayer2"><i class="fa fa-shield fa-4x"></i></span></div>
+	</div>
+</div>
+
+<!-- Display progress bar --->
+<div class="progress" id="progressIndicator">
+	<div id="progressBar" class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+	<span class="sr-only">100% Complete</span></div>
+</div>
+<div id="waitingMessage"></div>
+<!-- End of progress bar --->
+
+<!-- Display when game ends -->
+<div id="winner"></div>
+
+<!-- Display when game begins. -->
+<div id="board"></div>
+
+<script src="../socket.io/socket.io.js"></script> 
+<script src="../javascripts/socket.js"></script>
+<script>
+	play("{{room}}", "{{username}}");
+</script>

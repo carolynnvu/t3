@@ -1,0 +1,81 @@
+<div id="displayCharacter">
+  <img src="{{warrior.imgURL}}">
+  <h5>{{warrior.cname}}</h5>
+</div>
+
+<div role="tabpanel" id="playpen">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#challenge" aria-controls="home" role="tab" data-toggle="tab">Challenge</a></li>
+    <li role="presentation"><a href="#invitations" aria-controls="profile" role="tab" data-toggle="tab">Arena</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <!-- CHALLENGE tab panel -->
+    <div role="tabpanel" class="tab-pane active" id="challenge">
+      <!-- Challenge Form -->
+      <form class="form-collection" action="" method="POST" role="form">
+        <div class="input-group">
+        <input type="text" class="form-control" id="opponent" name="opponent" placeholder="Search for opponent" required>
+          <span class="input-group-btn"> 
+            <button id="find-user" class="btn btn-default find-user-btn" type="button">
+               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </span>
+        </div> <!-- End of input group -->
+        <div id="foundUser"></div>
+        <div id="opponentName"></div>
+        <div id="continent"> </div>
+        <div id="country"></div>
+        <div id="city"></div>
+        <button class="btn btn-lg btn-block challenge-form-btn" type="submit">Submit</button>
+      </form>
+    </div> <!-- End of Challenge Form -->
+    <!-- Arena tab panel -->
+    <div role="tabpanel" class="tab-pane" id="invitations">
+      {{#if matches.length}}
+        <table class = "table arena-table"> 
+          <thead>
+          <tr>
+              <th>Date</th>
+              <th>Host</th>
+              <th>Winner</th>
+              <th>Active</th>
+              <th></th>
+          </tr>
+          </thead>
+          <tbody>
+              {{#each matches}}
+                <tr> 
+                  <td>{{this.date}}</td>
+                  <td>{{this.host}}</td>
+                  <td>{{this.winner}}</td>
+                  <td>
+                    {{#if this.status}}
+                      <span class="matchStatus open"><i class="fa fa-check fa-2x"></i></span>
+                    {{else}}
+                      <span class="matchStatus closed"><i class="fa fa-times fa-2x"></i></span>
+                    {{/if}}
+                  </td>
+                  <td>
+                    {{#if this.status}}
+                      <a href="/game?id={{this.roomId}}">
+                      <span><i class="fa fa-arrow-circle-right fa-2x"></i></span>
+                      </a>
+                    {{else}}
+                      - 
+                    {{/if}}
+                  </td>
+                </tr>
+              {{/each}}
+          </tbody>
+      </table>
+      {{else}}
+         <p>No matches to display!</p>
+      {{/if}}
+    </div> <!-- Close arena tab panel -->
+  </div>
+</div>
+
+<script src="/javascripts/createMatch.js"></script>
+
